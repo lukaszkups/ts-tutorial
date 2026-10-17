@@ -1,0 +1,95 @@
+:root {
+  --vp-c-brand-1: #b8921a;
+  --vp-c-brand-2: #d4a820;
+  --vp-c-brand-3: #ecbd29;
+  --vp-c-brand-soft: rgba(236, 189, 41, 0.14);
+
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #121212;
+  --vp-button-brand-bg: #ecbd29;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #121212;
+  --vp-button-brand-hover-bg: #f0c94a;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #121212;
+  --vp-button-brand-active-bg: #d4a820;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #ecbd29 30%, #f5d76e 70%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #ecbd29 50%, #121212 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #ecbd29;
+  --vp-c-brand-2: #f0c94a;
+  --vp-c-brand-3: #d4a820;
+  --vp-c-brand-soft: rgba(236, 189, 41, 0.16);
+
+  --vp-button-brand-text: #121212;
+  --vp-button-brand-hover-text: #121212;
+  --vp-button-brand-active-text: #121212;
+  --vp-button-brand-bg: #ecbd29;
+  --vp-button-brand-hover-bg: #f0c94a;
+  --vp-button-brand-active-bg: #d4a820;
+}
+
+.lk-back-home {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  background: #121212;
+  border: 1px solid #ecbd29;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+  text-decoration: none;
+}
+
+.lk-back-home__mark {
+  position: relative;
+  width: 22px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lk-back-home__logo {
+  display: block;
+  position: relative;
+  background: #fff;
+  transform: skew(25deg, 0deg);
+  width: 9px;
+  height: 8px;
+  /* Optical center: pseudo-elements extend farther to the right */
+  margin: 0 0 0 -7px;
+}
+
+.lk-back-home__logo::after,
+.lk-back-home__logo::before {
+  display: block;
+  position: relative;
+  content: " ";
+  background: #ecbd29;
+  transform: skew(-50deg, 0deg);
+}
+
+.lk-back-home__logo::after {
+  margin-top: 8px;
+  margin-left: -4.7px;
+  margin-right: -5.8px;
+  height: 8px;
+}
+
+.lk-back-home__logo::before {
+  margin-top: -8px;
+  margin-left: 13.8px;
+  margin-right: -14.4px;
+  height: 8px;
+}
